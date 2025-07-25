@@ -3,30 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kabelo's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Kabelo Monnakgotla | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Hi, I'm Kabelo 👋</h1>
-    <p>BSc IT Student | C# Developer | Cybersecurity Explorer</p>
-    <nav>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="resume.html">CV</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container">
+      <nav>
+        <h1 class="logo">Kabelo</h1>
+        <ul class="nav-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>Welcome</h2>
-      <p>This site serves as my Virtual CV for showcasing skills, projects, and experience.</p>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>Hi, I’m Kabelo <span class="wave">👋</span></h2>
+          <p class="subtitle">BSc IT Student | C# Developer | Cybersecurity Explorer</p>
+          <p class="description">
+            I am a BSc Information Technology student with a passion for developing robust and secure applications. Explore my projects, skills, and experiences showcased on this site.
+          </p>
+          <a href="projects.html" class="btn">View My Work</a>
+        </div>
+        <div class="hero-img">
+          <img src="profile.jpg" alt="Kabelo Monnakgotla headshot" />
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Kabelo Monnakgotla</p>
+    <div class="container">
+      <p>© 2025 Kabelo Monnakgotla</p>
+    </div>
   </footer>
 </body>
 </html>
