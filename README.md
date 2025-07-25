@@ -12,7 +12,7 @@ The site includes sections such as:
 - **Contact** – Ways to get in touch
 
 ## 🚀 Live Website
-Visit: [https://yourusername.github.io/virtual-cv]((https://dext3r89.github.io/virtual-cv/))
+Visit: [https://dext3r89.github.io/virtual-cv/)]((https://dext3r89.github.io/virtual-cv/))
 
 ## 🛠️ Technologies Used
 - HTML5 & CSS3
