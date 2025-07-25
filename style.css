@@ -109,3 +109,14 @@ footer {
   color: #6c757d;
   font-size: 0.9rem;
 }
+
+.projects .project,
+.about ul li,
+.contact ul li {
+  margin-bottom: 20px;
+}
+
+.resume .btn {
+  display: inline-block;
+  margin-top: 20px;
+}
