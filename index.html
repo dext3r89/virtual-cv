@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kabelo's Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
 </head>
-<body>
+<body class="light-mode">
   <header>
     <div class="container">
       <h1>Hi, I'm Kabelo <span class="wave">👋</span></h1>
@@ -17,6 +18,7 @@
         <a href="projects.html">Projects</a>
         <a href="resume.html">CV</a>
         <a href="contact.html">Contact</a>
+        <button id="theme-toggle" aria-label="Toggle dark mode">🌓</button>
       </nav>
     </div>
   </header>
@@ -24,19 +26,49 @@
   <main>
     <section class="intro">
       <div class="container">
-        <h2>Welcome</h2>
-        <p>
-          This site serves as my Virtual CV for showcasing my skills, projects, and experiences.
-          As a tech enthusiast, I'm passionate about solving real-world problems through code and design.
-        </p>
-        <a href="projects.html" class="btn">View My Work</a>
+        <h2><span id="typing"></span></h2>
+        <p>This site serves as my Virtual CV for showcasing my skills, projects, and experience.</p>
+        <a href="KabeloMonnakgotlaCV.pdf" class="btn" download>📄 Download My CV</a>
       </div>
+    </section>
+
+    <section class="skills container">
+      <h2>Technical Skills</h2>
+      <div class="skill-bar">
+        <p>C#</p>
+        <div class="bar"><div class="progress" style="width: 90%"></div></div>
+      </div>
+      <div class="skill-bar">
+        <p>SQL</p>
+        <div class="bar"><div class="progress" style="width: 85%"></div></div>
+      </div>
+      <div class="skill-bar">
+        <p>Python</p>
+        <div class="bar"><div class="progress" style="width: 80%"></div></div>
+      </div>
+    </section>
+
+    <section class="contact container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+        <p id="form-status"></p>
+      </form>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <p>© 2025 Kabelo Monnakgotla. All rights reserved.</p>
+      <p>© 2025 Kabelo Monnakgotla</p>
     </div>
   </footer>
 </body>

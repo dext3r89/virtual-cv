@@ -120,3 +120,59 @@ footer {
   display: inline-block;
   margin-top: 20px;
 }
+
+/* Theme Modes */
+body.light-mode {
+  background-color: #f4f4f4;
+  color: #222;
+}
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #1f1f1f;
+}
+body.dark-mode .btn {
+  background-color: #f1f1f1;
+  color: #121212;
+}
+
+/* Skill Bars */
+.skill-bar {
+  margin-bottom: 20px;
+}
+.bar {
+  background: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.progress {
+  background: #007bff;
+  height: 20px;
+  border-radius: 8px;
+  transition: width 1s ease-in-out;
+}
+
+/* Contact Form */
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+form .btn {
+  margin-top: 20px;
+}
+#form-status {
+  margin-top: 10px;
+  font-style: italic;
+  color: green;
+}
