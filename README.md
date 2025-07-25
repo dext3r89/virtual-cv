@@ -12,7 +12,7 @@ The site includes sections such as:
 - **Contact** – Ways to get in touch
 
 ## 🚀 Live Website
-Visit: [https://dext3r89.github.io/virtual-cv/]((https://dext3r89.github.io/virtual-cv/))
+Visit: [https://dext3r89.github.io/virtual-cv/](https://dext3r89.github.io/virtual-cv/)
 
 ## 🛠️ Technologies Used
 - HTML5 & CSS3
@@ -30,5 +30,5 @@ No setup required. Simply open `index.html` in a browser or visit the hosted Git
 
 ## 📫 Contact
 You can reach me via:
-- LinkedIn: [linkedin.com/in/kabelo]((https://www.linkedin.com/in/kabelo-monnakgotla-b392091a7/))
+- LinkedIn: [linkedin.com/in/kabelo](https://www.linkedin.com/in/kabelo-monnakgotla-b392091a7/)
 - Email: monnakgotlakabelo216@email.com
