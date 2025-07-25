@@ -13,34 +13,36 @@ window.onload = () => {
     document.body.classList.remove("light-mode", "dark-mode");
     document.body.classList.add(`${savedTheme}-mode`);
   }
+
+  animateTyping("I'm Kabelo", "typing", 100);
+  fillSkillBars();
 };
 
-// Typing Text Animation
-const phrases = ["I'm Kabelo 👨‍💻", "A Developer 💡", "An IT Student 🎓"];
-let i = 0, j = 0, currentPhrase = [], isDeleting = false;
-
-function loopTyping() {
-  document.getElementById("typing").textContent = currentPhrase.join("");
-
-  if (!isDeleting && j < phrases[i].length) {
-    currentPhrase.push(phrases[i][j++]);
-  } else if (isDeleting && j > 0) {
-    currentPhrase.pop();
-    j--;
-  }
-
-  if (j === phrases[i].length) isDeleting = true;
-  if (isDeleting && j === 0) {
-    isDeleting = false;
-    i = (i + 1) % phrases.length;
-  }
-
-  setTimeout(loopTyping, isDeleting ? 50 : 120);
+// Typing Effect (No Deletion)
+function animateTyping(text, targetId, speed = 100) {
+  const target = document.getElementById(targetId);
+  let i = 0;
+  const type = () => {
+    if (i < text.length) {
+      target.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    }
+  };
+  type();
 }
-loopTyping();
 
-// Form Validation (Feedback Message)
-document.getElementById("contact-form").addEventListener("submit", function(e) {
+// Fill Skill Bars on Load
+function fillSkillBars() {
+  const bars = document.querySelectorAll(".progress");
+  bars.forEach(bar => {
+    const width = bar.getAttribute("data-width");
+    bar.style.width = width;
+  });
+}
+
+// Contact Form
+document.getElementById("contact-form").addEventListener("submit", function (e) {
   e.preventDefault();
   document.getElementById("form-status").textContent = "✅ Message sent (demo only)";
   this.reset();
