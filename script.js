@@ -14,7 +14,7 @@ window.onload = () => {
     document.body.classList.add(`${savedTheme}-mode`);
   }
 
-  animateTyping("I'm Kabelo", "typing", 100);
+  animateTyping("I'm Kabelo Monnakgotla", "typing", 100);
   fillSkillBars();
 };
 
